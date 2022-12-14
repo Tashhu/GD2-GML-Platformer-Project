@@ -35,7 +35,16 @@ if (place_meeting(x,y+vsp,obj_Wall))
 	{
 		y = y + sign(vsp);
 	}
-	vsp = 0;
-	
+	vsp = 0;	
 }
 y = y + vsp;
+
+//Animation
+if (!place_meeting(x,y+1,obj_Wall)
+{
+	sprite_index = spr_PlayerAir;
+	image_speed = 0;
+	if (vsp > 0) image_index = 1; else image_index = 0;
+	
+	
+}
